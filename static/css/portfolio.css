@@ -90,7 +90,6 @@ img {
 	text-align: right;
 	font-weight: bold;
 	margin-right: 2em;
-	left: 53%;
 }
 
 #footer {
@@ -150,81 +149,100 @@ img {
 
     .gallery {
    		margin: auto;
-		width: 70%;
+		width: 50%;
+   	}
 
+   	#header {
+   		left: 43%;
    	}
 }
 
 /* Tablets:; 2 */
 @media only screen and (min-width : 481px) and (max-width : 767px) {
-
-   .cell {
+   	.cell {
 	    width: 50%;
 	    padding-bottom: 50%;
    }
 
     .gallery {
    		margin: auto;
-		width: 70%;
+		width: 60%;
+   	}
 
+   	#header {
+   		left: 53%;
    	}
 }
 
 /* iPads: 3  */
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
-   .cell {
+   	.cell {
       	width: 33.3%;
       	padding-bottom: 33.3%;
-
     }
 
     .gallery {
    		margin: auto;
-		width: 70%;
+		width: 60%;
+   	}
 
+   	#header {
+   		left: 53%;
    	}
 }
 
 /* Desktop - Laptop: 4 */
 @media only screen and (min-width : 1025px) and (max-width: 1224px) {
    
-   .cell {
+   	.cell {
       	width: 25%;
       	padding-bottom: 25%;
-   }
+   	}
 
-   .gallery {
+   	.gallery {
    		margin: auto;
-		width: 70%;
-   }
+		width: 60%;
+   	}
+
+   	#header {
+   		left: 60%;
+   	}
 }
 
 /* Desktop - Laptop: 4 */
 @media only screen and (min-width : 1225px) and (max-width : 1823px) {
    
-   .cell {
+   	.cell {
       	width: 25%;
       	padding-bottom: 25%;
-   }
+   	}
 
-   .gallery {
+   	.gallery {
    		margin: auto;
-		width: 50%;
-   }
+		width: 55%;
+   	}
+
+   	#header {
+   		left: 60%;
+   	}
 }
 
 /* Large screens */
 @media only screen and (min-width: 1824px) {
 
-   .cell {
+    .cell {
       	width: 25%;
       	padding-bottom: 25%;
-   }
+   	}
 
-   .gallery {
+   	.gallery {
    		margin: auto;
-		width: 40%;
-   }
+		width: 50%;
+   	}
+
+   	#header {
+   		left: 63%;
+   	}
 }
 /* Lightbox */
 
