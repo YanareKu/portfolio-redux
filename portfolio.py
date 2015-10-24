@@ -9,8 +9,8 @@ app.jinja_env.undefined = jinja2.StrictUndefined
 
 @app.route("/")
 def index():
-    """This is the 'cover' page of the ubermelon site"""
-    return render_template("index.html")
+    """Website opens with Illustration Gallery"""
+    return render_template("illust.html")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
