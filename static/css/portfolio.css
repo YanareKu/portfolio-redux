@@ -3,6 +3,9 @@
 
 html {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
+  height:100%;
 }
 
 *, *:before, *:after {
@@ -34,8 +37,9 @@ body {
 	background-color: #ffffff;
 	background-image:url(../img/website_BG.jpg);
 	background-repeat:no-repeat;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  height:100%;
 }
 
 a {
@@ -81,38 +85,43 @@ img {
 } 
 
 
-#contain { 
+#wrapper { 
 	position: relative;
-	top: 3em;
+  min-height: 100%;
 }
 
 #header {
-	position: absolute;
 	text-align: right;
 	font-weight: bold;
-	margin-right: 2em;
-}
-
-#footer {
-	position: relative;
-	text-align: center;
-	top: 3em;
-
+  padding-top: 2em;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 1.2em;
 }
 
 nav {
-	margin-top: 0.3em;
+  padding-top: 0.3em;
 }
 
 #content {
-	position: relative;
-	top: 6em;
+  padding-bottom: 70px;
+}
+
+
+#footer {
+	position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
 }
 
 .emphasis {
 	color: #8175A1;
-	font-size: 16px
+	font-size: 16px;
 }
+
 .gallery {
 	overflow: hidden;
 }
@@ -126,9 +135,9 @@ nav {
 	overflow: hidden;
 	position: absolute;
 	left: 10px;
-   	right: 10px;
-   	top: 10px;
-   	bottom: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
 }
 
 .thumbnail img {
@@ -144,13 +153,13 @@ nav {
 @media only screen and (max-width : 480px) {
 
    .cell {
-      	width: 100%;
-      	padding-bottom: 100%;
+      width: 100%;
+      padding-bottom: 100%;
    }
 
     .gallery {
    		margin: auto;
-		width: 50%;
+		  width: 50%;
    	}
 
    	#header {
@@ -167,7 +176,7 @@ nav {
 
     .gallery {
    		margin: auto;
-		width: 60%;
+		  width: 60%;
    	}
 
    	#header {
@@ -178,13 +187,13 @@ nav {
 /* iPads: 3  */
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
    	.cell {
-      	width: 33.3%;
-      	padding-bottom: 33.3%;
+      width: 33.3%;
+      padding-bottom: 33.3%;
     }
 
     .gallery {
    		margin: auto;
-		width: 60%;
+		  width: 60%;
    	}
 
    	#header {
@@ -196,13 +205,13 @@ nav {
 @media only screen and (min-width : 1025px) and (max-width: 1224px) {
    
    	.cell {
-      	width: 25%;
-      	padding-bottom: 25%;
+      width: 25%;
+      padding-bottom: 25%;
    	}
 
    	.gallery {
    		margin: auto;
-		width: 60%;
+		  width: 60%;
    	}
 
    	#header {
@@ -214,13 +223,13 @@ nav {
 @media only screen and (min-width : 1225px) and (max-width : 1823px) {
    
    	.cell {
-      	width: 25%;
-      	padding-bottom: 25%;
+      width: 25%;
+      padding-bottom: 25%;
    	}
 
    	.gallery {
    		margin: auto;
-		width: 55%;
+		  width: 55%;
    	}
 
    	#header {
@@ -232,13 +241,13 @@ nav {
 @media only screen and (min-width: 1824px) {
 
     .cell {
-      	width: 25%;
-      	padding-bottom: 25%;
+      width: 25%;
+      padding-bottom: 25%;
    	}
 
    	.gallery {
    		margin: auto;
-		width: 50%;
+		  width: 50%;
    	}
 
    	#header {
