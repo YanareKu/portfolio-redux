@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="gallery">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="The Portfolio of Illustrator Yanare Ku.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yanare Ku || Illustrator</title>
+
+	<link rel="stylesheet" href="css/portfolio.css" type="text/css" media="screen">
+	<script src="js/angular.min.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<span class="emphasis">Yanare Ku</span>
+			<nav>
+				<a href="/">Illustration</a> || 
+				<a href="/vector">Vector</a> || 
+				<a href="/ui">User Interface</a> || 
+				<a href="/about">About</a> || 
+				<a href="/contact">Contact</a>
+			</nav>
+		</div>
+		<div id="content">
+			<div class="gallery" ng-controller="GalleryController">
+				<div class="cell" ng-repeat="image in images">
+					<image-gallery art="image"></image-gallery>
+				</div>
+			</div>
+		</div>
+		<div id="footer"><p> &copy; 2005-2015 Yanare "Lurial" Ku </p></div>
+	</div>
+
+	<!-- Modules -->
+	<script src="js/app.js"></script>
+
+	<!-- Controller -->
+
+	<script src="js/gallery/gallery_controller.js"></script>
+
+	<!-- Directives -->
+
+	<script src="js/gallery/gallery_directive.js"></script>
+
+	<!-- jQuery . Lightbox -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+
+</body>
+</html>

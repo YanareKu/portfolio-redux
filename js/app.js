@@ -1,4 +1,4 @@
-(function(){
-	var app = angular.module('gallery', []);
+var app = angular.module('gallery', []);
 
-})();
+
+
