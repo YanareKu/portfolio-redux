@@ -1,0 +1,7 @@
+<div class="gallery">
+	<div class="cell" ng-repeat="image in images">
+		<div class="thumbnail">	
+			<a ng-href="{{image.image}}" data-lightbox="portfolio" data-title="{{image.title}}" target="_blank"><img ng-src="{{image.thumbnail}}"></a>
+		</div>
+	</div>
+</div>

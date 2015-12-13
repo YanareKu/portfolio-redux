@@ -1,4 +1,4 @@
-app.controller('GalleryController', ['$scope', function($scope) {
+app.controller('IllustController', ['$scope', function($scope) {
 	$scope.images = [{
 		thumbnail: 'img/illust/ama_thumb.jpg',
 		image: 'img/illust/ama.jpg',
