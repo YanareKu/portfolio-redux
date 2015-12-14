@@ -134,6 +134,7 @@ nav {
 .thumbnail {
 	overflow: hidden;
 	position: absolute;
+  border: 1px solid #362944;
 	left: 10px;
   right: 10px;
   top: 10px;
@@ -229,7 +230,7 @@ nav {
 
    	.gallery {
    		margin: auto;
-		  width: 55%;
+		  width: 50%;
    	}
 
    	#header {
@@ -247,7 +248,7 @@ nav {
 
    	.gallery {
    		margin: auto;
-		  width: 50%;
+		  width: 45%;
    	}
 
    	#header {
