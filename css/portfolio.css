@@ -8,16 +8,14 @@ html {
   height:100%;
 }
 
+p {
+  margin: 0 0 1em 0;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-h1 {
-	color: #666;
-	font-family: "Titillium", Candara, Arial, sans-serif;
-	font-size: 15px;
-	text-decoratin: none;
-}
 subsect {
 	color: #666;
 	font-family: "Titillium", Candara, Arial, sans-serif;
@@ -30,12 +28,13 @@ fadetext {
 	font-family: "Titillium", Candara, Arial, sans-serif;
 	font-size: 10px;
 }
+
 body {
 	color: #666;
 	font-family: "Titillium", Candara, Arial, sans-serif;
 	font-size: 14px;
 	background-color: #ffffff;
-	background-image:url(../img/website_BG.jpg);
+	background-image:url(../img/website_BG.png);
 	background-repeat:no-repeat;
   margin: 0;
   padding: 0;
@@ -49,6 +48,7 @@ a {
 }
 a:link {
 	text-decoration: none;
+  font-weight:bold;
 	color: #777777;
 	filter:alpha(opacity=100);
 	-moz-opacity:1.00;
@@ -56,6 +56,7 @@ a:link {
 }
 a:visited {
 	text-decoration: none;
+  font-weight:bold;
 	color: #777777;
 	filter:alpha(opacity=100);
 	-moz-opacity:1.00;
@@ -64,6 +65,7 @@ a:visited {
 }
 a:hover {
 	text-decoration: none;
+  font-weight:bold;
 	color: #999999;
 	filter:alpha(opacity=100);
 	-moz-opacity:1.00;
@@ -72,18 +74,13 @@ a:hover {
 }
 a:active {
 	text-decoration: none;
+  font-weight:bold;
 	color: #777777;
 	filter:alpha(opacity=100);
 	-moz-opacity:1.00;
 	opacity:1.00;
 
 }
-
-img {
-	border: 2px;
-	border-color: #001021;
-} 
-
 
 #wrapper { 
 	position: relative;
@@ -107,7 +104,6 @@ nav {
   padding-bottom: 70px;
 }
 
-
 #footer {
 	position: absolute;
   text-align: center;
@@ -120,6 +116,16 @@ nav {
 .emphasis {
 	color: #8175A1;
 	font-size: 16px;
+  font-weight: bold;
+}
+
+.title {
+  text-align:center;
+  padding-bottom: 1em;
+}
+
+.title span {
+  padding: 0 30px 0;
 }
 
 .gallery {
@@ -145,13 +151,34 @@ nav {
    width: 100%;
 }
 
+.about-content {
+  padding: 10px 15px 15px 15px;
+  display: inline-block;
+  width: 50%;
+  max-width: 500px;
+  min-width: 300px;
+  vertical-align: top;
+}
 
+.about-img {
+  padding: 10px 15px 15px 15px;
+  display: inline-block;
+  width: 35%;
+  min-width:210px;
+  vertical-align: top;
+  text-align: right;
+}
+
+.about-img img {
+  padding-bottom: 2.5em;
+}
 
 
 /* Responsive */
 
 /* Smartphone: 1 */
-@media only screen and (max-width : 480px) {
+
+@media only screen and (max-width : 514px) {
 
    .cell {
       width: 100%;
@@ -159,17 +186,34 @@ nav {
    }
 
     .gallery {
-   		margin: auto;
-		  width: 50%;
-   	}
+      margin: auto;
+      width: 50%;
+    }
 
-   	#header {
-   		left: 43%;
-   	}
+    #header {
+      text-align: center;
+    }
+
+    body {
+      background-image: none;
+    }
+
+    .about-wrapper {
+      width: 100%;
+      text-align:center;
+    }
+
+    .about-img {
+      display: none;
+    }
+
+    .about-content {
+      text-align: left;
+      width:;
+    }
 }
-
 /* Tablets:; 2 */
-@media only screen and (min-width : 481px) and (max-width : 767px) {
+@media only screen and (min-width : 515px) and (max-width : 800px) {
    	.cell {
 	    width: 50%;
 	    padding-bottom: 50%;
@@ -181,12 +225,25 @@ nav {
    	}
 
    	#header {
-   		left: 53%;
+      text-align: center;
    	}
+
+    body {
+      background-image: url(../img/website_BG_fade.png);
+    }
+
+    .about-wrapper {
+      width: 100%;
+      margin: auto;
+    }
+
+    .about-img {
+      width:40%;
+    }
 }
 
 /* iPads: 3  */
-@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+@media only screen and (min-width: 801px) and (max-width: 1024px)  {
    	.cell {
       width: 33.3%;
       padding-bottom: 33.3%;
@@ -200,6 +257,11 @@ nav {
    	#header {
    		left: 53%;
    	}
+
+    .about-wrapper {
+      width: 70%;
+      margin: auto;
+    }
 }
 
 /* Desktop - Laptop: 4 */
@@ -218,6 +280,11 @@ nav {
    	#header {
    		left: 60%;
    	}
+
+    .about-wrapper {
+      width: 70%;
+      margin: auto;
+    }
 }
 
 /* Desktop - Laptop: 4 */
@@ -236,6 +303,11 @@ nav {
    	#header {
    		left: 60%;
    	}
+
+    .about-wrapper {
+      width: 60%;
+      margin: auto;
+    }
 }
 
 /* Large screens */
@@ -254,6 +326,11 @@ nav {
    	#header {
    		left: 63%;
    	}
+
+    .about-wrapper {
+      width: 50%;
+      margin: auto;
+    }
 }
 /* Lightbox - http://lokeshdhakar.com */
 

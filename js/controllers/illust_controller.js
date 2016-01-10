@@ -1,4 +1,5 @@
 app.controller('IllustController', ['$scope', function($scope) {
+	$scope.title = "Illustration";
 	$scope.images = [{
 		thumbnail: 'img/illust/frozen_souls_thumb.jpg',
 		image: 'img/illust/frozen_souls.jpg',

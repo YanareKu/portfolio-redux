@@ -1,4 +1,5 @@
 app.controller('UiController', ['$scope', function($scope) {
+	$scope.title = "User Interface";
 	$scope.images = [{
 		thumbnail: 'img/ui/YanareKu_Scifi_UI_thumb.jpg',
 		image: 'img/ui/YanareKu_Scifi_UI.jpg',

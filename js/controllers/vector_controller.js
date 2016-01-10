@@ -1,4 +1,5 @@
 app.controller('VectorController', ['$scope', function($scope) {
+	$scope.title = "Vector";
 	$scope.images = [{
 		thumbnail: 'img/vector/spellstorm_eraxylon_thumb.jpg',
 		image: 'img/vector/spellstorm_eraxylon.jpg',
@@ -16,7 +17,7 @@ app.controller('VectorController', ['$scope', function($scope) {
 	},
 	{
 		thumbnail: 'img/vector/spellstorm_primal_faction_thumb.jpg',
-		image: 'img/vector/spellstorm_priaml_faction.jpg',
+		image: 'img/vector/spellstorm_primal_faction.jpg',
 		title: 'Spellstorm: Primal Faction'
 	},
 	{
