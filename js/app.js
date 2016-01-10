@@ -1,4 +1,4 @@
-var app = angular.module('gallery', ['ngRoute']);
+var app = angular.module('gallery', ['ngRoute', 'ngSanitize']);
 
 app.config(function ($routeProvider) { 
   $routeProvider 
@@ -10,15 +10,13 @@ app.config(function ($routeProvider) {
     	controller: 'VectorController',
     	templateUrl: '/views/gallery.html'
     })
-    .when('/ui', {
-    	controller: 'UiController',
-    	templateUrl: '/views/gallery.html'
-    })
     .when('/about', {
+    	controller: 'AboutController',
     	templateUrl: '/views/about.html'
     })
     .when('/contact', {
-    	templateUrl: '/views/contact.html'
+    	controller: 'ContactController',
+    	templateUrl: '/views/about.html'
     })
     .otherwise({ 
       redirectTo: '/' 

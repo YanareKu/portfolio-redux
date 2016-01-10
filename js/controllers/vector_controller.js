@@ -46,11 +46,6 @@ app.controller('VectorController', ['$scope', function($scope) {
 		title: 'Spellstorm: Tarankor'
 	},
 	{
-		thumbnail: 'img/vector/spellstorm_fallen_angel_thumb.jpg',
-		image: 'img/vector/spellstorm_fallen_angel.jpg',
-		title: 'Spellstorm: Fallen Angel'
-	},
-	{
 		thumbnail: 'img/vector/sirhal_thumb.jpg',
 		image: 'img/vector/sirhal.jpg',
 		title: 'Spellstorm: Sir Halleal'
